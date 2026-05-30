@@ -19,6 +19,8 @@ body {
     font-family: 'Outfit', 'Noto Sans TC', sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Background Stars Animation */
@@ -74,8 +76,8 @@ body {
 /* Music Button */
 .music-btn {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: calc(2rem + env(safe-area-inset-top));
+    right: calc(2rem + env(safe-area-inset-right));
     z-index: 100;
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
@@ -226,8 +228,8 @@ body {
 
 .close-btn {
     position: absolute;
-    top: 2rem;
-    right: 3rem;
+    top: calc(1rem + env(safe-area-inset-top));
+    right: calc(1.5rem + env(safe-area-inset-right));
     font-size: 3rem;
     color: white;
     cursor: pointer;
@@ -333,9 +335,35 @@ body {
 }
 
 @media (max-width: 768px) {
-    .glass-header { padding: 2rem 1rem; }
-    .glass-header h1 { font-size: 2rem; }
-    .gallery-container { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
-    .lecture-content { padding: 2rem 1.5rem; }
-    .lecture-content h2 { font-size: 1.6rem; }
+    .glass-header { 
+        padding: 2rem 1rem; 
+        margin: calc(1rem + env(safe-area-inset-top)) 1rem 1rem; 
+        width: auto; 
+    }
+    .glass-header h1 { font-size: 1.8rem; }
+    .gallery-container { 
+        grid-template-columns: 1fr; /* Single column on iPhone */
+        gap: 1.5rem; 
+        padding: 1rem env(safe-area-inset-right) 1rem env(safe-area-inset-left);
+    }
+    .lecture-content { 
+        margin: 2rem 1rem; 
+        padding: 2rem 1.5rem; 
+        width: auto; 
+    }
+    .lecture-content h2 { font-size: 1.5rem; }
+    
+    /* Adjust music button for iPhone 15 Pro / Dynamic Island */
+    .music-btn {
+        padding: 0.8rem;
+        top: calc(1rem + env(safe-area-inset-top));
+        right: calc(1rem + env(safe-area-inset-right));
+        border-radius: 50%;
+    }
+    .music-btn .music-text {
+        display: none; /* Hide text on phone to save space */
+    }
+    .music-btn svg {
+        margin: 0;
+    }
 }
