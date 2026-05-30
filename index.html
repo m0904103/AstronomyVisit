@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天文館參訪與講座紀錄</title>
+    <meta name="description" content="2026年5月30日台北天文館參訪與歐陽亮老師「謎樣星宿」講座紀錄">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" loop preload="auto"></audio>
+    
+    <button id="music-toggle" class="music-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span class="music-text">播放星空配樂</span>
+    </button>
+    
+    <header class="glass-header">
+        <h1>天文漫步 <span>Galactic Journey</span></h1>
+        <p>2026.05.30 ｜ 台北天文館參訪 & 謎樣星宿講座照片回顧</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-item" data-title="銀河的誕生與成長">
+            <img src="galaxy_birth.jpg" alt="銀河的誕生與成長">
+            <div class="overlay"><h3>銀河的誕生與成長</h3></div>
+        </div>
+        
+        <div class="gallery-item video-item" data-title="星際體驗 1">
+            <video autoplay loop muted playsinline>
+                <source src="801822797.834747.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"><h3>星際體驗展區 1</h3></div>
+        </div>
+
+        <div class="gallery-item" data-title="古代星圖考證">
+            <img src="ancient_starmap.jpg" alt="古代星圖考證">
+            <div class="overlay"><h3>古代星圖考證</h3></div>
+        </div>
+
+        <div class="gallery-item" data-title="戶外渾天儀">
+            <img src="armillary_sphere.jpg" alt="戶外渾天儀">
+            <div class="overlay"><h3>戶外天文儀器</h3></div>
+        </div>
+
+        <div class="gallery-item video-item" data-title="星際體驗 2">
+            <video autoplay loop muted playsinline>
+                <source src="801822753.452642.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"><h3>星際體驗展區 2</h3></div>
+        </div>
+
+        <div class="gallery-item" data-title="沉浸式星空房">
+            <img src="galaxy_light_room.jpg" alt="沉浸式星空房">
+            <div class="overlay"><h3>沉浸式光影體驗</h3></div>
+        </div>
+
+        <div class="gallery-item" data-title="歐陽亮老師講座">
+            <img src="lecture_slide.jpg" alt="歐陽亮老師講座">
+            <div class="overlay"><h3>古人眼中的銀河</h3></div>
+        </div>
+    </main>
+
+    <section class="lecture-content">
+        <h2><svg viewBox="0 0 24 24" width="28" height="28" stroke="#4a90e2" stroke-width="2" fill="none"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 講座精華：古人眼中的銀河與謎樣星宿</h2>
+        <div class="lecture-grid">
+            <div class="lecture-card">
+                <h3>🌟 星官演變與政治分野</h3>
+                <p>唐宋時期興起占卜個人命運的「三星術」。明清時星圖遭大幅魔改且引進西洋觀測，導致傳統星官被遺忘。此外，古代將星宿對應地面各省（分野），但因「大中國主義」，台灣等地被視為無星宿對應的畫外之地。</p>
+            </div>
+            <div class="lecture-card">
+                <h3>🌌 神話虛實與田野陷阱</h3>
+                <p>「王母娘娘」拆散牛郎織女其實是跨越戰國與漢朝的神話大雜燴。而日本學者曾誤將現代小學課本內容當成原住民的古老星座傳說，這提醒了我們做田野調查時必須留意「現代資訊污染」。</p>
+            </div>
+            <div class="lecture-card">
+                <h3>📊 銀河命名與水的統計</h3>
+                <p>為了解開星官命名之謎，老師採用未被清朝魔改的高句麗古星圖進行嚴謹統計。結果證實：銀河內的星官有高達 30%~38% 的名字（如船、魚、鱉）與水有關，遠高於銀河外的 3%，實證了古人視銀河為河流的浪漫。</p>
+            </div>
+            <div class="lecture-card">
+                <h3>🔬 科學思維：破除迷信</h3>
+                <p>古代占星看似神準，實則為「倖存者偏差」。因「歲差」與「恆星自行」，兩千年前的北極星其實是「帝星」且星空長得完全不同。研究歷史必須回歸一手古籍史料，不應盲信迷信或 AI 幻覺。</p>
+            </div>
+        </div>
+        <div class="lecture-footer">
+            <a href="https://liangouystar.blogspot.com/" target="_blank" class="blog-btn">👉 前往歐陽亮老師部落格了解更多</a>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <div id="lightbox-media"></div>
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
